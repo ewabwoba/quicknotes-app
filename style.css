@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef1f4;
+  color: #263238;
+}
+
+header {
+  background: #00695c;
+  color: white;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+header h1 {
+  margin: 0 0 4px;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  max-width: 700px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.panel {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  color: #607d8b;
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #b0bec5;
+  border-radius: 6px;
+}
+
+#note-input {
+  flex: 1;
+}
+
+#search-input {
+  width: 100%;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  color: white;
+  background: #00695c;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #004d40;
+}
+
+#error-message {
+  color: red;
+  margin: 10px 0 0;
+}
+
+/* Notes */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.note {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #cfd8dc;
+  border-left: 6px solid #90a4ae;
+  border-radius: 8px;
+}
+
+.note p {
+  margin: 0 0 8px;
+}
+
+.note small {
+  display: block;
+  color: #607d8b;
+  margin-bottom: 8px;
+}
+
+.note button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background: #b71c1c;
+}
+
+.note button:hover {
+  background: #7f0000;
+}
+
+.category-personal { border-left-color: teal; }
+.category-work { border-left-color: darkred; }
+.category-study { border-left-color: dodgerblue; }
+
+.empty {
+  color: #607d8b;
+}
+
+/* Pagination */
+#pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+#pagination button:disabled {
+  background: #b0bec5;
+  cursor: not-allowed;
+}
+
+#clear-all-btn {
+  background: #546e7a;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
